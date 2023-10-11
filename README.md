@@ -50,13 +50,21 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 ### Screenshots
 
 - # Homepage
+![homepage](https://github.com/Karthi110/tech-tunes/assets/98247040/4797f8bb-57f4-46ee-baed-d766f6039324)
 
 - # About the garage
+![about](https://github.com/Karthi110/tech-tunes/assets/98247040/12c3156e-12db-4009-9937-b335191c04ce)
 
 - # Appointment Booking
+![footer](https://github.com/Karthi110/tech-tunes/assets/98247040/ad7f4390-99e8-4236-aaba-58fa55447f60)
 
 - # Booking Form
+![booking](https://github.com/Karthi110/tech-tunes/assets/98247040/301784e4-f862-4bfd-839f-39a393cf61d1)
 
 - # Admin Tables
+![admin](https://github.com/Karthi110/tech-tunes/assets/98247040/e169b173-4b95-48e4-9a8a-eda64c03ebd1)
+![admin2](https://github.com/Karthi110/tech-tunes/assets/98247040/143bdfd0-3b2c-4c18-80bd-6ecc5e40b81a)
 
 - # Login and Register
+![login](https://github.com/Karthi110/tech-tunes/assets/98247040/dac4851a-8443-44de-9e68-7853e416f65d)![register](https://github.com/Karthi110/tech-tunes/assets/98247040/1881c515-b5ec-4f7c-a401-6443b1d43678)
+
