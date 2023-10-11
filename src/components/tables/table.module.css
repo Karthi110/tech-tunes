@@ -1,0 +1,56 @@
+.container {
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  background-color: var(--textCol) !important;
+  color: var(--bgCol) !important;
+}
+
+.board {
+  margin: 20px;
+  padding: 40px;
+  width: 100%;
+}
+
+.delete {
+  font-size: 0.8rem;
+  color: crimson !important;
+  cursor: pointer;
+  font-weight: bold;
+  text-align: left;
+}
+
+@media screen and (max-width: 1280px) {
+  .board {
+    margin: 10px;
+    padding: 20px;
+  }
+  #title {
+    font-size: 0.9rem;
+  }
+  #desc {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 960px) {
+  #title {
+    font-size: 0.8rem;
+    font-weight: 500;
+  }
+  #desc {
+    font-size: 0.7rem;
+    font-weight: 300;
+  }
+  .board {
+    padding: 10px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .board {
+    padding: 0;
+    margin: 5px;
+  }
+}

@@ -1,0 +1,176 @@
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 100px;
+  margin-top: 100px;
+}
+
+.imgContainer {
+  flex: 1;
+  height: 600px;
+  width: 500px;
+  position: relative;
+  border: 2px solid var(--bgCol);
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 0 30px rgba(255, 255, 255, 0.5);
+}
+.imgBg {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 10px;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+}
+
+.img {
+  object-fit: cover;
+}
+
+.textContainer {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.title {
+  font-size: 4rem;
+  font-weight: 300;
+}
+.desc {
+  width: 90%;
+  font-weight: 300;
+  font-size: 18px;
+  letter-spacing: 1.4;
+  line-height: 1.7;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: max-content max-content;
+  row-gap: 10px;
+  column-gap: 30px;
+  margin-top: 20px;
+}
+
+.card {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 10px;
+  gap: 10px;
+}
+
+.img2 {
+  object-fit: contain;
+  overflow: hidden;
+}
+
+.subTitle {
+  padding: 0px 5px;
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+
+.desc2 {
+  padding: 4px 5px;
+  font-size: 18px;
+  letter-spacing: 1.5;
+  line-height: 1;
+  font-weight: 300;
+}
+
+@media screen and (max-width: 1640px) {
+  .title {
+    font-size: 3.4rem;
+  }
+  .container {
+    gap: 50px;
+    margin-top: 80px;
+  }
+  .subTitle {
+    font-size: 1.2rem;
+    font-weight: 500;
+  }
+  .desc,
+  .desc2 {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 1440px) {
+  .imgContainer {
+    width: 350px;
+    height: 450px;
+  }
+  .title {
+    font-size: 3rem;
+  }
+  #extra {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  .container {
+    margin-top: 50px;
+  }
+  .title {
+    font-size: 2.5rem;
+  }
+  .desc,
+  .desc2 {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 1040px) {
+  .title {
+    font-size: 1.6rem;
+  }
+  .container {
+    gap: 20px;
+  }
+
+  .desc,
+  .desc2 {
+    font-size: 0.9rem;
+  }
+  .cards {
+    column-gap: 15px;
+    row-gap: 10px;
+  }
+  .imgContainer {
+    display: none;
+  }
+  .img2 {
+    width: 45px;
+    height: 45px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .title {
+    font-size: 1.8rem;
+  }
+  .cards {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .title {
+    font-size: 1.4rem;
+  }
+  .subTitle {
+    font-size: 0.9rem;
+  }
+  .desc,
+  .desc2 {
+    font-size: small;
+  }
+}

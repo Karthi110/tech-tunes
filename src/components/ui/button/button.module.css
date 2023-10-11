@@ -1,0 +1,82 @@
+.btn {
+  margin-top: 20px;
+  width: max-content;
+  height: 60px;
+  padding: 10px 30px;
+  background-color: var(--textCol);
+  color: var(--bgCol);
+  border: none;
+  outline: none;
+  text-align: center;
+  font-weight: 600;
+  font-size: 1.1rem;
+  border-radius: 10px;
+  transition: all 0.18s ease;
+}
+
+.btn:hover {
+  scale: 1.1;
+  background-color: var(--bgCol);
+  color: var(--textCol);
+  border: 2px solid var(--border);
+  box-shadow: 0 0 30px rgba(255, 255, 255, 0.5);
+}
+
+.menu {
+  display: none;
+}
+
+.l1 {
+  display: flex;
+  cursor: pointer;
+  font-size: 1.2rem;
+  font-weight: 300;
+}
+
+.responsiveMenu {
+  position: absolute;
+  top: 50px;
+  left: 0;
+  background-color: var(--bgCol);
+  height: calc(100vh-100px);
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  padding: 20px;
+}
+
+@media screen and (max-width: 1280px) {
+  .btn {
+    height: 50px;
+    font-size: 1rem;
+    padding: 10px 25px;
+  }
+}
+
+@media screen and (max-width: 1040px) {
+  .btn {
+    padding: 10px 20px;
+    font-size: 0.8rem;
+  }
+}
+@media screen and (max-width: 768px) {
+  .btn {
+    height: 45px;
+    padding: 6px 15px;
+    font-size: 0.8rem;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .btn {
+    height: max-content;
+    width: max-content;
+    padding: 10px;
+  }
+  .menu {
+    display: flex;
+  }
+}

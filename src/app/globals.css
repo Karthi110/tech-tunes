@@ -1,0 +1,342 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
+:root {
+  --bgCol: #053b50;
+  --bgCol2: #176b87;
+  --textCol: #eeeeee;
+  --border: #d8d8d8;
+}
+
+* {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  min-height: 100vh;
+  background-position: center;
+  background: linear-gradient(to right, var(--bgCol), var(--bgCol2), #0f2c59);
+  color: var(--textCol);
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+header {
+  position: fixed;
+  height: max-content;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 99;
+  background: linear-gradient(to right, var(--bgCol), var(--bgCol2), #0f2c59);
+}
+
+.logo {
+  font-size: 2rem;
+  color: var(--textCol);
+  user-select: none;
+  background: linear-gradient(to right, #8ecddd, #85e6c5);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.navigation .nav {
+  display: inline-flex;
+  position: relative;
+  font-size: 1.1em;
+  font-weight: 500;
+  margin-left: 40px;
+}
+
+.navigation .nav::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -8px;
+  width: 100%;
+  height: 3px;
+  background: var(--textCol);
+  border-radius: 5px;
+  height: 3px;
+  transform-origin: right;
+  transform: scale(0);
+  transition: transform 0.5s ease;
+}
+
+.navigation .nav:hover::after {
+  transform: scale(1);
+}
+
+.navigation .popup {
+  padding: 3px 8px;
+  background: transparent;
+  border: 2px solid var(--border);
+  outline: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 1.3rem;
+  font-weight: 500;
+  margin-left: 40px;
+  color: #d8d8d8;
+  transition: all 0.5s ease;
+}
+
+.navigation .popup:hover {
+  background-color: var(--textCol);
+  color: var(--bgCol);
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.5);
+}
+
+@media screen and (max-width: 1280px) {
+  .logo {
+    font-size: 1.5rem;
+  }
+  .navigation .popup {
+    font-size: 1rem;
+  }
+  .navigation .nav {
+    font-size: 1rem;
+  }
+  header {
+    padding: 20px 70px;
+  }
+}
+@media screen and (max-width: 1040px) {
+  .logo {
+    font-size: 1.1rem;
+  }
+  .navigation .popup {
+    font-size: 0.9rem;
+    margin-left: 30px;
+  }
+  .navigation .nav {
+    font-size: 0.9rem;
+    margin-left: 30px;
+  }
+  .navigation #call {
+    display: none;
+  }
+  header {
+    padding: 20px 50px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .logo {
+    font-size: 1.2rem;
+  }
+  .navigation .popup {
+    font-size: 0.9rem;
+    margin-left: 22px;
+  }
+  .navigation .nav {
+    font-size: 0.9rem;
+    margin-left: 22px;
+  }
+}
+@media screen and (max-width: 640px) {
+  .logo {
+    font-size: 1rem;
+  }
+  .navigation .nav,
+  .navigation .popup {
+    display: none;
+  }
+}
+
+.wrapper {
+  position: relative;
+  width: 400px;
+  height: 540px;
+  background: transparent;
+  border-radius: 10px;
+  border: 2px solid var(--border);
+  box-shadow: 0 0 30px rgba(255, 255, 255, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.wrapper .form-box {
+  width: 100%;
+  padding: 40px;
+}
+
+.wrapper .close {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 45px;
+  height: 45px;
+  background: var(--textCol);
+  font-size: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--bgCol);
+  border-bottom-left-radius: 20px;
+  z-index: 1;
+  transition: all 0.18s ease;
+}
+
+.wrapper .close:hover {
+  background-color: crimson;
+  color: var(--textCol);
+}
+
+.form-box h2 {
+  font-size: 2rem;
+  color: var(--textCol);
+  text-align: center;
+  margin-top: 10px;
+  user-select: none;
+}
+
+.input-box {
+  position: relative;
+  width: 100%;
+  height: 50px;
+  border-bottom: 2px solid var(--border);
+  background: transparent;
+  margin: 30px 0;
+}
+
+.input-box label {
+  position: absolute;
+  top: 50%;
+  left: 5px;
+  transform: translateY(-50%);
+  font-size: 1rem;
+  color: #fff;
+  font-weight: 500;
+  pointer-events: none;
+  transition: 0.5s;
+}
+
+.input-box input:focus ~ label,
+.input-box input:valid ~ label {
+  top: -5px;
+}
+
+.input-box input {
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+  outline: none;
+  border: none;
+  font-size: 1rem;
+  color: var(--border);
+  font-weight: 600;
+  padding: 0px 35px 0 5px;
+}
+
+.input-box .icon {
+  position: absolute;
+  right: 8px;
+  font-size: 1.2rem;
+  color: #fff;
+  line-height: 57px;
+}
+
+.input-box .err {
+  padding: 10px;
+  color: lightsalmon;
+}
+
+.remember-forgot {
+  font-size: 0.9rem;
+  color: #fff;
+  font-weight: 500;
+  margin: -10px 0 15px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.remember-forgot .link {
+  transition: 0.3s ease-out;
+}
+.remember-forgot .link:hover {
+  text-decoration: underline;
+  transform: scale(1.1);
+}
+
+.btn {
+  width: 100%;
+  height: 45px;
+  background: #fff;
+  border: none;
+  outline: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 1.2rem;
+  color: var(--bgCol);
+  font-weight: 500;
+  text-transform: capitalize;
+  transition: all 0.18s ease;
+}
+
+.btn:hover {
+  scale: 1.05;
+  border: 2px solid var(--border);
+  background-color: var(--bgCol);
+  color: var(--textCol);
+}
+
+.redirect {
+  font-size: 0.9rem;
+  color: #fff;
+  text-align: center;
+  font-weight: 500;
+  margin: 25px;
+}
+
+.redirect p .link {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.redirect p .link:hover {
+  text-decoration: underline;
+}
+
+.prov {
+  width: 100%;
+  border: 2px solid var(--border);
+  padding: 6px 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  transition: 0.18s ease;
+  cursor: pointer;
+}
+
+.prov:hover {
+  background-color: var(--textCol);
+  color: var(--bgCol);
+}
+
+.prov .social {
+  font-size: 1.2rem;
+  position: relative;
+  bottom: -4px;
+  margin: 0 10px;
+}
+
+.link {
+  cursor: pointer;
+}
