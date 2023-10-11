@@ -46,3 +46,17 @@ pnpm dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+
+### Screenshots
+
+- # Homepage
+
+- # About the garage
+
+- # Appointment Booking
+
+- # Booking Form
+
+- # Admin Tables
+
+- # Login and Register

@@ -2,7 +2,7 @@ import AuthProvider from "@/components/providers/AuthProvider";
 import "./globals.css";
 
 export const metadata = {
-  title: "Tech Tunes",
+  title: "Tech Tunes Motors",
   description: "Car Repair shop",
 };
 

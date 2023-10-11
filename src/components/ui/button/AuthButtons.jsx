@@ -12,15 +12,17 @@ const AuthButtons = () => {
 
   return (
     <>
-      {status !== "loading" && status === "unauthenticated" ? (
-        <Link href="/login" className="popup" prefetch>
-          Login
-        </Link>
-      ) : (
-        <span href="/" className="popup" onClick={signOut}>
-          Logout
-        </span>
-      )}
+      {status !== "loading" ? (
+        status === "unauthenticated" ? (
+          <Link href="/login" className="popup" prefetch>
+            Login
+          </Link>
+        ) : (
+          <span href="/" className="popup" onClick={signOut}>
+            Logout
+          </span>
+        )
+      ) : null}
       <div className={styles.menu}>
         {open ? (
           <AiOutlineClose

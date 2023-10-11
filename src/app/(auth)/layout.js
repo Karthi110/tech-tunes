@@ -4,7 +4,7 @@ import Head from "next/head";
 import Link from "next/link";
 
 export const metadata = {
-  title: "Tech Tunes",
+  title: "Tech Tunes Motors",
   description: "Car Repair shop",
 };
 
